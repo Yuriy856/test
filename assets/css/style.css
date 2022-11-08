@@ -17,12 +17,14 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #292929;
+    position: relative;
 }
 
 .container {
     max-width: 1330px;
     padding: 0 20px;
     margin: auto;
+    position: relative;
 }
 
 .header  {
@@ -32,6 +34,8 @@ body {
     background: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .header__nav {
@@ -160,6 +164,21 @@ body {
 
 .h-content__play img {
     margin-right: 20px;
+}
+
+
+.up__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    background: #1B5027;
+    border-radius: 10px 0px 0px 10px;
 }
 
 /* MAIN CONTENT ==========================================
