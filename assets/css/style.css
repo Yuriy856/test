@@ -11,6 +11,7 @@ ul {
 }
 a {
     text-decoration: none;
+    color: #292929;
 }
 
 body {
@@ -305,11 +306,11 @@ body {
 .main__content2 {
     max-width: 1440px;
     margin: auto;
-    height: 555px;
+    min-height: 555px;
     margin-top: 175px;
     background: url('../img/background__main.png');
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 100% 100%;
     color: #393939;
 }
 
@@ -343,7 +344,7 @@ body {
     margin-right: 110px;
     padding: 30px;
     width: 410px;
-    height: 425px;
+    max-height: 425px;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -430,6 +431,20 @@ body {
         justify-content: center;
         gap: 20px;
     }
+
+    
+    .content2__content {
+        justify-content: center;
+    }
+
+    .main__content2 {
+        min-height: 800px;
+    }
+
+    .content2__title {
+        margin-right: 60px;
+    }
+
 }
 
 
@@ -507,6 +522,67 @@ body {
     .i-info img {
         width: 14px;
         margin-right: 5px;
+    }
+
+    /* main__content2 ====================== */
+
+    .main__content2 {
+        margin-top: 130px;
+    }
+
+    .content2__title {
+        margin-right: 0;
+    }
+
+    .content2__form {
+        margin-right: 0;
+    }
+
+    .content2__title h2 {
+        font-size: 35px;
+        line-height: 34px;
+    }
+
+    .content2__title p {
+        font-size: 20px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .main__content2 {
+        min-height: 580px;
+        background-size: 850px;
+    }
+
+    .content2__title h2 {
+        font-size: 29.2683px;
+        line-height: 34px;
+    }
+
+    .content2__title p {
+        font-size: 14.6341px;
+        line-height: 17px;
+    }
+
+    .c2__form__title {
+        font-size: 20.4878px;
+        line-height: 24px;
+    }
+    
+    .content2__form input, button {
+        border: 0.731707px solid #000000;
+        border-radius: 7.31707px;
+        padding: 18px 15px 18px 40px;
+        font-size: 11.7073px;
+        line-height: 14px;
+    }
+
+    .content2__form button {
+        padding: 18px 15px;
+        font-size: 13.1707px;
+        line-height: 15px;
     }
 }
 
